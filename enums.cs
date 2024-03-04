@@ -1,10 +1,11 @@
 ﻿using System;
-//enums lol
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//for use in location class
-public enum retailerName { ASDA, TESCO, SAINSBURY, MORRISON, LIDL, ALDI, OTHER };
-public enum storeType { CONVENIENCE, MEDIUM, SUPERMARKET };
-
-//for use in product class
-//mass in grams, volume in ml
-public enum volumeType { MASS, VOLUME, AMOUNT };
+namespace ReceiptApp
+{
+    public enum VolumeType { AMOUNT,VOLUME,WEIGHT };
+    public enum Retailer { ASDA,LIDL,ALDI,MORRISON,TESCO,SAINSBURY };
+}
