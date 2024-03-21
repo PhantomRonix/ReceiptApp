@@ -11,12 +11,20 @@ namespace ReceiptApp
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        static Product[] products;
+        static Location[] locations;
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+        }
+
+        static void AddProduct()
+        {
+            Product newProduct = new Product();
         }
     }
 }
