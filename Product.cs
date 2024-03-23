@@ -55,7 +55,7 @@ namespace ReceiptApp
             set { comment = value; }
         }
 
-        public Product(uint ID, float vol, VolumeType voltype, string name, string brandname)
+        public Product(uint ID, string name, string brandname, VolumeType voltype, float vol)
         {
             productID = ID;
             volume = vol;

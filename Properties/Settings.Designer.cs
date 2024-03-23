@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ReceiptApp.Properties
+namespace RealReceiptApp.Properties
 {
 
 

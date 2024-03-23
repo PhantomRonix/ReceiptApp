@@ -24,7 +24,7 @@ namespace ReceiptApp
 
         static void AddProduct()
         {
-            Product newProduct = new Product();
+            //Product newProduct = new Product();
         }
     }
 }
