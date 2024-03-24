@@ -18,11 +18,36 @@ namespace ReceiptApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    ///  
     public partial class MainWindow : Window
     {
+        private TextBox[] textboxes = new TextBox[3];
+
         public MainWindow()
         {
             InitializeComponent();
+            textboxes[0] = NewItemNameBox;
+            textboxes[1] = NewItemBrandNameBox;
+            textboxes[2] = NewItemVolumeBox;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ClearNewDataButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (TextBox box in textboxes)
+            {
+                box.Clear();
+            }
+            AddProductLogLabel.Content = "Fields cleared...";
+        }
+
+        private void AddItemButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

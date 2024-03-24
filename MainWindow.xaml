@@ -9,26 +9,27 @@
     <Grid>
         <TabControl>
             <TabItem Header="Add Products">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#ffffff" Width="786">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="43*"/>
-                        <ColumnDefinition Width="354*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="1" Content="Item Name" HorizontalAlignment="Left" Margin="57,203,0,0" VerticalAlignment="Top"/>
-                    <Label Grid.Column="1" Content="Item Brand" HorizontalAlignment="Left" Margin="203,203,0,0" VerticalAlignment="Top"/>
-                    <Label Grid.Column="1" Content="Item Amount Type" HorizontalAlignment="Left" Margin="342,203,0,0" VerticalAlignment="Top"/>
-                    <Label Grid.Column="1" Content="Item Amount" HorizontalAlignment="Left" Margin="488,203,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="NewItemNameBox" Grid.Column="1" HorizontalAlignment="Left" Margin="57,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <TextBox x:Name="NewItemBrandNameBox" Grid.Column="1" HorizontalAlignment="Left" Margin="203,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <ComboBox x:Name="NewItemVolumeTypeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="342,237,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
-                    <TextBox x:Name="NewItemVolumeBox" Grid.Column="1" HorizontalAlignment="Left" Margin="488,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <Button x:Name="AddItemButton" Content="Add Item" HorizontalAlignment="Left" Margin="57,280,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-                    <Button x:Name="ClearNewDataButton" Content="Clear Fields" HorizontalAlignment="Left" Margin="57,323,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Item Name" Margin="65,57,385,323" Grid.ColumnSpan="2"/>
+                    <Label Content="Item Brand" Margin="148,57,180,323" Grid.Column="1"/>
+                    <Label Content="Item Amount Type" Margin="350,57,-22,323" Grid.Column="1"/>
+                    <Label Content="Item Amount" Margin="514,57,-186,323" Grid.Column="1"/>
+                    <TextBox x:Name="NewItemNameBox" Margin="65,93,263,295"/>
+                    <TextBox x:Name="NewItemBrandNameBox" Margin="176,93,152,295" Grid.Column="1"/>
+                    <ComboBox x:Name="NewItemVolumeTypeBox" SelectionChanged="ComboBox_SelectionChanged" Margin="350,91,-22,293" Grid.Column="1"/>
+                    <TextBox x:Name="NewItemVolumeBox" Margin="514,93,-186,295" Grid.Column="1"/>
+                    <Button x:Name="AddItemButton" Content="Add Item" Click="AddItemButton_Click" Margin="33,133,295,253" Grid.Column="1" />
+                    <Button x:Name="ClearNewDataButton" Content="Clear Fields" Click="ClearNewDataButton_Click" Margin="176,133,152,253" Grid.Column="1"/>
+                    <Label x:Name="AddProductLogLabel" Content="" Margin="33,168,295,212" Grid.Column="1"/>
                 </Grid>
 
             </TabItem>
             <TabItem Header="Edit Products">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#ffffff">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="21*"/>
                         <ColumnDefinition Width="376*"/>
