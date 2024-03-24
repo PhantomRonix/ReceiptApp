@@ -26,9 +26,9 @@ namespace ReceiptApp
         public MainWindow()
         {
             InitializeComponent();
-            textboxes[0] = NewItemNameBox;
-            textboxes[1] = NewItemBrandNameBox;
-            textboxes[2] = NewItemVolumeBox;
+            //textboxes[0] = NewItemNameBox;
+            //textboxes[1] = NewItemBrandNameBox;
+            //textboxes[2] = NewItemVolumeBox;
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -42,7 +42,7 @@ namespace ReceiptApp
             {
                 box.Clear();
             }
-            AddProductLogLabel.Content = "Fields cleared...";
+            //AddProductLogLabel.Content = "Fields cleared...";
         }
 
         private void AddItemButton_Click(object sender, RoutedEventArgs e)

@@ -7,35 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TabControl>
-            <TabItem Header="Add Products">
-                <Grid Background="#ffffff" Width="786">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Item Name" Margin="65,57,385,323" Grid.ColumnSpan="2"/>
-                    <Label Content="Item Brand" Margin="148,57,180,323" Grid.Column="1"/>
-                    <Label Content="Item Amount Type" Margin="350,57,-22,323" Grid.Column="1"/>
-                    <Label Content="Item Amount" Margin="514,57,-186,323" Grid.Column="1"/>
-                    <TextBox x:Name="NewItemNameBox" Margin="65,93,263,295"/>
-                    <TextBox x:Name="NewItemBrandNameBox" Margin="176,93,152,295" Grid.Column="1"/>
-                    <ComboBox x:Name="NewItemVolumeTypeBox" SelectionChanged="ComboBox_SelectionChanged" Margin="350,91,-22,293" Grid.Column="1"/>
-                    <TextBox x:Name="NewItemVolumeBox" Margin="514,93,-186,295" Grid.Column="1"/>
-                    <Button x:Name="AddItemButton" Content="Add Item" Click="AddItemButton_Click" Margin="33,133,295,253" Grid.Column="1" />
-                    <Button x:Name="ClearNewDataButton" Content="Clear Fields" Click="ClearNewDataButton_Click" Margin="176,133,152,253" Grid.Column="1"/>
-                    <Label x:Name="AddProductLogLabel" Content="" Margin="33,168,295,212" Grid.Column="1"/>
-                </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem/>
+        </Menu>
 
-            </TabItem>
-            <TabItem Header="Edit Products">
-                <Grid Background="#ffffff">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="21*"/>
-                        <ColumnDefinition Width="376*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-        </TabControl>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
     </Grid>
 </Window>
