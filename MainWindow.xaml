@@ -4,22 +4,42 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RealReceiptApp"
+        xmlns:userControls="clr-namespace:RealReceiptApp.View.Modules"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Receipt App" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <!--Menu bar-->
             <RowDefinition Height="20"/>
+            <!--App space-->
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu>
-            <MenuItem/>
+            <MenuItem Header="File" Height="20">
+                <!--<MenuItem Command="Exit"/>-->
+            </MenuItem>
+            <MenuItem Header="Edit"/>
         </Menu>
 
+
+        <!--Application space-->
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="20*"/>
-                <ColumnDefinition Width="80*"/>
+                <!--App Modes Tab-->
+                <ColumnDefinition Width="120"/>
+                <!--Mode content-->
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+
+            <!--App modes tab-->
+            <StackPanel Grid.Column="0">
+                <userControls:ModeBox RadioButtonGroup="Group1" TextContent="Mode1"/>
+                <userControls:ModeBox RadioButtonGroup="Group1" TextContent="Mode2"/>
+                <userControls:ModeBox RadioButtonGroup="Group1" TextContent="Mode3"/>
+                <userControls:ModeBox RadioButtonGroup="Group1" TextContent="Mode4"/>
+            </StackPanel>
+
+
         </Grid>
     </Grid>
 </Window>
